@@ -1,1 +1,1 @@
-# 2026.2-
+Repositorio criado para atualização de codigos e atividades feitas no 2ª semestre de sistemas de informacao, IF Sudeste MG - Campus Manhuacu. Materias de desenvolvimento:  Desenvolvimento Web(html5,css e javascript) e Desenvolvimento orientado a objetos(java).
