@@ -14,5 +14,6 @@ class CriarProduto {
         System.out.println("Nome do produto: " + nome);
         System.out.println("Preço: " + preco);
         System.out.println("Quantidade em estoque: " + estoque);
+        System.out.println("----------------------------------");
     }
 }

@@ -26,6 +26,4 @@ class Carro {
         System.out.println("KM: " + km);
         System.out.println("Cor: " + cor);
     }
-
-    
 }
