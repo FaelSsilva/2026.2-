@@ -13,5 +13,7 @@ public class Main {
         minhaPlaylist.musicas.add(musica3);
 
         minhaPlaylist.musicasPlaylist();
+        System.out.println("-----------------");
+        minhaPlaylist.primeiraMusica();
     }
 }
