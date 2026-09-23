@@ -46,11 +46,20 @@ public class Playlist {
     }
     //metodo para verificar se musica está na playlist
     public void verificacao(Musica musica) {
-    if (musicas.contains(musica)) {
-        System.out.println("A música está na playlist.");
-    } else {
-        System.out.println("A música não está na playlist.");
+        if (musicas.contains(musica)) {
+            System.out.println("A música está na playlist.");
+        } else {
+            System.out.println("A música não está na playlist.");
+        }
     }
-}
+
+    //metodo para remover musica da playlist
+    public void removerMusica(Musica musica){
+       if (this.musicas.remove(musica)) {
+            System.out.println("Musica removida da playlist");
+       } else {
+            System.out.println("Musica nao está na playlist");
+       }
+    }
 
 }
