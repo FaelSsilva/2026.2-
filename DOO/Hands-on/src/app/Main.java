@@ -12,9 +12,7 @@ public class Main {
         minhaPlaylist.adicionarMusica(musica1);
         minhaPlaylist.adicionarMusica(musica2);
 
-        minhaPlaylist.musicasPlaylist();
         
-        minhaPlaylist.primeiraMusica();
 
     } 
 }

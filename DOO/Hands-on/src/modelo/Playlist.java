@@ -44,5 +44,13 @@ public class Playlist {
             System.out.println("Sua playlist está vazia");
         }
     }
+    //metodo para verificar se musica está na playlist
+    public void verificacao(Musica musica) {
+    if (musicas.contains(musica)) {
+        System.out.println("A música está na playlist.");
+    } else {
+        System.out.println("A música não está na playlist.");
+    }
+}
 
 }
