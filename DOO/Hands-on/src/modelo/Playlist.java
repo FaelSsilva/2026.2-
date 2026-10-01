@@ -62,4 +62,13 @@ public class Playlist {
        }
     }
 
+    public void verificarVazia(){
+        if(musicas.isEmpty()){
+            System.out.println("Sua playlist está vazia");
+        }else {
+            System.out.println("Sua playlist possui " + musicas.size() + " musicas");
+        }
+    }
+
+
 }
