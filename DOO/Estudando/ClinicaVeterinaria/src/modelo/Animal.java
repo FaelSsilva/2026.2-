@@ -6,8 +6,7 @@ public class Animal {
     private String raca;
     private String dtNascimento;
     private double peso;
-    private Responsavel responsavel;
-
+   
     //get
     public String getNome(){
         return nome;
@@ -27,10 +26,6 @@ public class Animal {
 
     public double getPeso(){
         return peso;
-    }
-
-    public Responsavel Responsavel(){
-        return responsavel;
     }
 
     //set

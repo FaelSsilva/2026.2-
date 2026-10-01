@@ -24,6 +24,42 @@ public class Responsavel {
         return endereco;
     }
 
+    public void setNome(String nome){
+        if(nome.trim().isEmpty()){    
+            System.out.println("Nome deve ser preenchido");
+            return;
+        }else{
+            this.nome = nome;
+        }
+    }
+
+    public void setCpf(String cpf){
+        if(cpf.trim().isEmpty()){
+            System.out.println("CPF deve ser preenchido");
+            return;
+        } else{
+            this.cpf = cpf;
+        }
+    }
+
+    public void setTelefone(String telefone){
+        if(telefone.trim().isEmpty()){
+            System.out.println("Telefone deve ser preenchido");
+            return;
+
+        }
+    }
+    
+    public void setEndereco(String endereco){
+        if (endereco.trim().isEmpty()){
+            System.out.println("Endereço deve ser preenchido");
+            return;
+        } else{
+            this.endereco = endereco;
+        }
+    }
+
+    //metodo construtor
     public Responsavel(String nome, String cpf, String telefone, String endereco){
         this.nome = nome;
         this.cpf = cpf;
@@ -33,12 +69,14 @@ public class Responsavel {
     }
 
     public void adicionarAnimal(Animal animais){
-        //adiciona animal em animais
+        //adiciona animal em animais array
         this.animais.add(animais);
         System.out.println("Animal adicionado a responsavel corretamente");
     }
 
-    // public void listarAnimais(){
-    //     for animal : 
-    // }
+    public void listarAnimais(){
+        for (Animal animal : animais){
+            System.out.println("Nome: " + animal.getNome());
+        }
+    }
 }

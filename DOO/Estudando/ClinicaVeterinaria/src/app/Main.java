@@ -12,5 +12,7 @@ public class Main{
 
         responsavel1.adicionarAnimal(animal1);
         responsavel1.adicionarAnimal(animal2);
+    
+        responsavel1.listarAnimais();
     }
 }
