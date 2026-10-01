@@ -6,7 +6,8 @@ public class Animal {
     private String raca;
     private String dtNascimento;
     private double peso;
-    
+    private Responsavel responsavel;
+
     //get
     public String getNome(){
         return nome;
@@ -28,6 +29,10 @@ public class Animal {
         return peso;
     }
 
+    public Responsavel Responsavel(){
+        return responsavel;
+    }
+
     //set
     public void setNome(String nome){
         if(nome.trim().isEmpty()){
@@ -39,7 +44,7 @@ public class Animal {
     }
 
     public void setEspecie(String especie){
-        if(nome.trim().isEmpty()){
+        if(especie.trim().isEmpty()){
             System.out.println("Especie não informada");
             return;
         } else{

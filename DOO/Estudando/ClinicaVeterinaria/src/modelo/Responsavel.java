@@ -4,17 +4,9 @@ import java.util.ArrayList;
 public class Responsavel {
     private String nome;
     private String cpf;
-    private double telefone;
+    private String telefone;
     private String endereco;
-    private Responsavel responsavel;
-
-    public Responsavel getResponsavel() {
-    return responsavel;
-    }
-
-    public void setResponsavel(Responsavel responsavel) {
-        this.responsavel = responsavel;
-    }
+    private ArrayList<Animal> animais = new ArrayList<>();
 
     public String getNome(){
         return nome;
@@ -24,11 +16,29 @@ public class Responsavel {
         return cpf;
     }
 
-    public double getTelefone(){
+    public String getTelefone(){
         return telefone;
     }
 
     public String getEndereco(){
         return endereco;
     }
+
+    public Responsavel(String nome, String cpf, String telefone, String endereco){
+        this.nome = nome;
+        this.cpf = cpf;
+        this.telefone = telefone;
+        this.endereco = endereco;
+        this.animais = new ArrayList<>();
+    }
+
+    public void adicionarAnimal(Animal animais){
+        //adiciona animal em animais
+        this.animais.add(animais);
+        System.out.println("Animal adicionado a responsavel corretamente");
+    }
+
+    // public void listarAnimais(){
+    //     for animal : 
+    // }
 }
