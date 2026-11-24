@@ -2,12 +2,12 @@ package model;
 
 public abstract class Conteudo{
     private String titulo;
-    private double duracao;
+    private double anoLancamento;
     private String genero;
 
-    public Conteudo(String titulo, double duracao, String genero) throws Exception{
+    public Conteudo(String titulo, double anoLancamento, String genero) throws Exception{
         this.titulo = titulo;
-        this.duracao = duracao;
+        this.anoLancamento = anoLancamento;
         this.genero = genero;
     }
 
@@ -22,15 +22,15 @@ public abstract class Conteudo{
         this.titulo = titulo;
     }
 
-    public double getDuracao() {
-        return duracao;
+    public double getanoLancamento() {
+        return anoLancamento;
     }
 
-    public void setDuracao(double duracao) throws Exception{
-        if(duracao <= 0 ){
-            throw new Exception("Duracao deve ser maior que 0 minutos");
+    public void setAnoLancamento(double anoLancamento) throws Exception{
+        if(anoLancamento <= 0 ){
+            throw new Exception("anoLancamento deve ser maior que 0");
         }
-        this.duracao = duracao;
+        this.anoLancamento = anoLancamento;
     }
 
     public String getGenero() {
@@ -43,5 +43,8 @@ public abstract class Conteudo{
         }
         this.genero = genero;
     }
+
+    public String paraString();
+
 
 }
