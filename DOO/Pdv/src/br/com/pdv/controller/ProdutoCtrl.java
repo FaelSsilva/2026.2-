@@ -1,27 +1,27 @@
-package src.br.com.pdv.controller;
+package br.com.pdv.controller;
+
 import java.util.ArrayList;
 
-import src.br.com.pdv.model.Produto;
+import br.com.pdv.model.Produto;
 
 /**
- * 
- * ProdutoCtrl Controla as operacoes relacionadas aos produtos.
+ * Controla as operações relacionadas
+ * aos produtos.
  */
 public class ProdutoCtrl {
     private ArrayList<Produto> produtos = new ArrayList<>();
     
     /**
-     * adicionar produto á lista
-     * @param produto Produto a ser adicionado
-     * 
+     * Adicionar um produto à lista.
+     * @param produto Produto a ser adicionado.
      */
-    public void adicionarProduto(Produto produto){  
+    public void adicionarProduto(Produto produto){
         this.produtos.add(produto);
     }
 
     /**
-     * Rerorna os produtos cadastrados
-     * @return Lista de produtos
+     * Retorna os produtos cadastrados.
+     * @return Lista de produtos.
      */
     public ArrayList<Produto> listarProdutos(){
         return this.produtos;

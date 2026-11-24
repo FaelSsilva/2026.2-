@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Reserva</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/estilo.css" type="text/css">
+  </head>
+  <body>
+    
+      <nav>
+        <p><a href="../index.html">Página principal</a></p>
+      </nav>
+      <h1 class="header">Reservas</h1>
+    
+
+    <main>
+      <fieldset> <legend>Informações Pessoais</legend>
+        <form method="get" action="/cadastro">
+          <p><b></b><label for="nome">Nome:</label></b></p>
+          <input type="text" id="nome" name="nome" maxlength="50" size="50" required>
+          
+          <p><b><label for="ddd">Telefone de Contato:</label></b></p>
+          <input type="tel" id="ddd" name="ddd" placeholder="DDD" maxlength="3" size="2" required>
+          <input type="tel" id="telefone" name="telefone" placeholder="Telefone" maxlength="9" required>
+        </fieldset>
+        
+        <fieldset><legend>Dados da Reserva</legend>
+          <table class="reservaTabela">
+            <tr>
+              <td>
+                <p><b>Mesa para quantas pessoas?</b></p>
+                <input type="radio" id="pessoas2" name="pessoas" value="2 pessoas" required>
+                <label for="pessoas2">2 Pessoas</label> <br>
+                <input type="radio" id="pessoas4" name="pessoas" value="4 pessoas" required>
+                <label for="pessoas4">4 Pessoas</label> <br>
+                <input type="radio" id="pessoas6" name="pessoas" value="6 pessoas" required>
+                <label for="pessoas6">6 Pessoas</label>
+              </td>
+              <td>
+                <p><b>Escolha os horários de interesse:</b></p>
+                <input type="checkbox" id="hrs18" name="hrs18" value="18 horas">
+                <label for="hrs18">A partir das 18:00 horas</label> <br>
+                <input type="checkbox" id="hrs20" name="hrs20" value="20 horas">
+                <label for="hrs20">A partir das 20:00 horas</label> <br>
+                <input type="checkbox" id="hrs22" name="hrs22" value="22 horas">
+                <label for="hrs22">A partir das 22:00 horas</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><b><label for="atraso">Qual é a probabilidade de haver atrasos na chegada?</label></b></p>
+                <p> 0 <input type="range" id="atraso" name="atraso" min="0" max="5" value="0" step="1" required> 5 </p>
+              </td>
+              <td>
+                <b><label for="data">Escolha o dia da reserva: </label></b>
+                <input type="date" id="date" name="data" required>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset><legend>Fidelidade</legend>
+          <b><label for="fidelidade">Caso possua cartão de fidelidade, informe o número abaixo:</label><b>
+          <p><input type="number" id="fidelidade" name="fidelidade" min="1" max="99999"></p>
+        </fieldset>
+        <p><input type="submit" value="Enviar Reserva"></p>
+      </main>
+
+    </form>
+  </body>
+</html>

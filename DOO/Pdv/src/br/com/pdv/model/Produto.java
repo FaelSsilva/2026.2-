@@ -1,29 +1,35 @@
-package src.br.com.pdv.model;
+package br.com.pdv.model;
 
-/*
-*   Responsavel por definir as regras de negócio dos produtos
-*/
+/**
+ * Responsável por definir as regras de negócio
+ * dos produtos.
+ */
 public class Produto {
     private String nome;
     private String descricao;
     private double preco;
     private double estoque;
-    
+
     /**
-     * Construtor da classe produto
-     * @param nome Nome do produto
-     * @param descricao Descricao do produto
-     * @param preco preco do produto
-     * @param estoque estoque do produto
+     * Construtor da classe Produto.
+     * @param nome Nome do produto.
+     * @param descricao Descrição do produto.
+     * @param preco Preço do produto.
+     * @param estoque Estoque do produto.
      */
-    
-    public Produto(String nome, String descricao, double preco, double estoque){
+    public Produto(
+        String nome,
+        String descricao,
+        double preco,
+        double estoque
+    ){
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.estoque = estoque;
     }
-    //Getters e Setters
+    
+    // Getters and Setters
     public String getNome() {
         return nome;
     }

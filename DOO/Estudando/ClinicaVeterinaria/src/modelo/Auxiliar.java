@@ -1,5 +1,7 @@
 package modelo;
 
+import java.time.LocalDate;
+
 public class Auxiliar extends Profissional {
     private String turno;
 
@@ -16,8 +18,8 @@ public class Auxiliar extends Profissional {
         }
     }
 
-    public Auxiliar(String nome, String registro, String dataAdmissao, double peso, String turno){
-        super(nome, registro, dataAdmissao, peso);
+    public Auxiliar(String nome, String registro, LocalDate dataAdmissao, double salarioBase, String turno){
+        super(nome, registro, dataAdmissao, salarioBase);
         this.turno = turno;
     }
 }

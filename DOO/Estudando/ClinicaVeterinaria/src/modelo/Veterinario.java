@@ -1,5 +1,7 @@
 package modelo;
 
+import java.time.LocalDate;
+
 public class Veterinario extends Profissional {
     private String especialidade;
 
@@ -16,7 +18,7 @@ public class Veterinario extends Profissional {
         }
     }
 
-    public Veterinario(String nome, String registro, String dataAdmissao, double salarioBase, String especialidade){
+    public Veterinario(String nome, String registro, LocalDate dataAdmissao, double salarioBase, String especialidade){
         //uso de construtor passando dados comuns de profissional
         super(nome, registro, dataAdmissao, salarioBase);
         this.especialidade = especialidade;

@@ -1,0 +1,110 @@
+.rotulo_item {
+    text-align: center;
+    width: 150px;
+}
+
+.header {
+    text-align: center;
+}
+
+.preco {
+    text-align: right;
+    width: 100px;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+.nav_index {
+    text-align: right; 
+}
+
+.corpo_texto {
+    text-align: justify;
+}
+
+.texto_centro {
+    text-align: center;
+}
+
+body {
+    background-color: #ffeee6;
+    font-family: "Trebuchet MS", "Arial", "sans-serif";
+}
+
+header {
+    background-color: #ffdccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #ffdccc;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    color: #703216;
+    font-size: 13px;
+}
+
+.tabela {
+    text-align: center;
+}
+
+td {
+    background-color: #ffe8dd;
+    color: #662000;
+    padding: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:#ffcbb3;
+}
+
+.imgCardapio {
+    width: 300px;
+}
+
+#cardapio {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-spacing: 10px;
+}
+
+.reservaTabela {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardapioHeader {
+    height: 50px;
+    background-color: #ffdccc;
+    padding: 20px;
+    font-size: 20px;
+    color: #4d1800;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #fea981;
+}
+
+td:hover {
+    background-color: #ffcbb3;
+}
+
+.cardapioHeader:hover {
+    background-color: hsl(19, 100%, 80%);
+}
+
+.aviso {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(153, 204, 255, 0.6);
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px grey;
+}

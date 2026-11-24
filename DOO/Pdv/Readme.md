@@ -1,35 +1,35 @@
-## Projeto PDV  
+## Projeto PDV
 
-Sistema para gerenciamento de **ponto de venda (PDV)**
+Sistema para gerenciamento de **Ponto de Venda (PDV)**.
 
-## Estrutura do projeto
+## Estrutura do Projeto
 
 O projeto contém a seguinte estrutura:
 
-- `src`: Pasta para manter os códigos-fonte
-- `lib`: Pasta para manter as dependências
-- `bin`: Arquivos de saída da compilação
-
+- `src`: pasta para manter os códigos-fonte
+- `lib`: pasta para menter as dependências
+- `bin`: arquivos de saída da compilação
 
 ## System Design
 
-O sistema será projetado com base na arquitetura **Model-View-Controller (MVC)**, sendo: 
+O sistema será projetado com base na arquitetura **Model-View-Controller (MVC)**, sendo:
 
-- `Model`: Representa as entidades do PDV e as regras de negócio
-- `View`: Representa a interação do usuário com o sistema
-- `Controller`: Recebe as ações da View e coordena as operações do sistema
-- `Repository`: Persistencia dos dados (.txt)
+- `Model`: representa as entidades do PDV e as regras de negócio
+- `View`: representa a interação do usuário com o sistema
+- `Controller`: recebe as ações da View e coordena as operações do sistema
+- `Repository`: persistência dos dados (.txt)
 
+## Requisitos Funcionais
 
-## Requisitos funcionais
+### Produto
 
-- O produto deve conter: `nome`, `descrição`, `preço` e `estoque`
+- O produto deve conter: `nome, descrição, preço e estoque`
 
 ## Javadoc
 
-Execute o comando no terminal para gerar o Javadoc: 
+Execute o comando no terminal para gerar o Javadoc:
 `javadoc -d doc -sourcepath src -subpackages br.com.pdv`
 
-## Desenvolvido e Mantido por:
+## Desenvolvido e Mantido por
 
-Rafael De Paula Silva
+[Filipe Fernandes, Ph.D.](http://filipefernandesphd.com)

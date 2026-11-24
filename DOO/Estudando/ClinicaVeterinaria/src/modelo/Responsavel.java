@@ -8,6 +8,16 @@ public class Responsavel {
     private String endereco;
     private ArrayList<Animal> animais = new ArrayList<>();
 
+
+    //metodo construtor
+    public Responsavel(String nome, String cpf, String telefone, String endereco){
+        this.nome = nome;
+        this.cpf = cpf;
+        this.telefone = telefone;
+        this.endereco = endereco;
+        this.animais = new ArrayList<>();
+    }
+    
     public String getNome(){
         return nome;
     }
@@ -46,7 +56,8 @@ public class Responsavel {
         if(telefone.trim().isEmpty()){
             System.out.println("Telefone deve ser preenchido");
             return;
-
+        }else{
+            this.telefone = telefone;
         }
     }
     
@@ -59,19 +70,17 @@ public class Responsavel {
         }
     }
 
-    //metodo construtor
-    public Responsavel(String nome, String cpf, String telefone, String endereco){
-        this.nome = nome;
-        this.cpf = cpf;
-        this.telefone = telefone;
-        this.endereco = endereco;
-        this.animais = new ArrayList<>();
-    }
-
-    public void adicionarAnimal(Animal animais){
-        //adiciona animal em animais array
-        this.animais.add(animais);
-        System.out.println("Animal adicionado a responsavel corretamente");
+    public void adicionarAnimal(Animal animal){
+        if (animal == null){
+            throw new IllegalArgumentException("O animal não pode ser nulo");
+        }
+        if (animal.getResponsavel() != null && animal.getResponsavel() != this){
+            throw new IllegalArgumentException("O animal já possui outro responsável");
+        }
+        if (!this.animais.contains(animal)){
+            this.animais.add(animal);
+            animal.atribuirResponsavel(this);
+        }
     }
 
     public void listarAnimais(){

@@ -1,39 +1,48 @@
+import java.util.Scanner;
+
+import src.br.com.pdv.controller.MenuCtrl;
 import src.br.com.pdv.controller.ProdutoCtrl;
 import src.br.com.pdv.model.Produto;
 import src.br.com.pdv.view.ProdutoView;
-
+import src.br.com.pdv.view.MenuView;
 public class App{
     public static void main(String[] args) {
+    Scanner scanner  = new Scanner(System.in);
+
+        MenuView menuView = new MenuView(scanner);
+        MenuCtrl menuctrl = new MenuCtrl(menuView);
+        menuctrl.iniciar();
+
+        scanner.close();
         //Instanciar View e Controleler de Produto
-        ProdutoView produtoView = new ProdutoView();
-        ProdutoCtrl produtoCtrl = new ProdutoCtrl();
+        // ProdutoView produtoView = new ProdutoView();
+        // ProdutoCtrl produtoCtrl = new ProdutoCtrl();
         
-        
-        //Criando um produto
-        produtoCtrl.adicionarProduto(
-            new Produto(
-                "Arroz", 
-                "Arroz Sepé 5kg", 
-                25.99, 
-                100
-            )
-        );
+        // //Criando um produto
+        // produtoCtrl.adicionarProduto(
+        //     new Produto(
+        //         "Arroz", 
+        //         "Arroz Sepé 5kg", 
+        //         25.99, 
+        //         100
+        //     )
+        // );
 
-        //Criando um produto
-        produtoCtrl.adicionarProduto(
-            new Produto(
-                "Feijão", 
-                "Feijão Sepé 1kg", 
-                11.99, 
-                50
-            )
-        );
+        // //Criando um produto
+        // produtoCtrl.adicionarProduto(
+        //     new Produto(
+        //         "Feijão", 
+        //         "Feijão Sepé 1kg", 
+        //         11.99, 
+        //         50
+        //     )
+        // );
 
-        //Mostrar o produto na tela
-        //criar uma variavel da lista de produto
-        produtoView.exibirProdutos(
-            produtoCtrl.listarProdutos()
-        );
+        // //Mostrar o produto na tela
+        // //criar uma variavel da lista de produto
+        // produtoView.exibirProdutos(
+        //     produtoCtrl.listarProdutos()
+        // );
 
     }
 }

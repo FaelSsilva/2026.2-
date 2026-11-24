@@ -1,12 +1,14 @@
 package modelo;
 
+import java.time.LocalDate;
+
 public class Animal {
     private String nome;
     private String especie;
     private String raca;
-    private String dtNascimento;
+    private LocalDate dtNascimento;
     private double peso;
-   
+    private Responsavel responsavel;
     //get
     public String getNome(){
         return nome;
@@ -20,12 +22,21 @@ public class Animal {
         return raca;
     }
 
-    public String getDtNascimento(){
+    public LocalDate getDtNascimento(){
         return dtNascimento;
     }
 
     public double getPeso(){
         return peso;
+    }
+
+    public Responsavel getResponsavel(){
+        return responsavel;
+    }
+
+
+    public void atribuirResponsavel(Responsavel responsavel){
+        this.responsavel = responsavel;
     }
 
     //set
@@ -56,22 +67,19 @@ public class Animal {
         }
     }
 
-    public void setDtNascimento(String dtNascimento){
-        if(dtNascimento.trim().isEmpty()){
-            System.out.println("Data de nascimento não informada");
-            return;
-        }else{
+    public void setDtNascimento(LocalDate dtNascimento){
             this.dtNascimento = dtNascimento;
-        }
     }
 
     public void setPeso(double peso){
         if(peso <= 0){
             System.out.println("Peso não informado");
+        } else{
+            this.peso = peso;
         }
     }
 
-    public Animal(String nome, String especie, String raca, String dtNascimento, double peso){
+    public Animal(String nome, String especie, String raca, LocalDate dtNascimento, double peso){
         this.nome = nome;
         this.especie = especie;
         this.raca = raca;

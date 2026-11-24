@@ -1,9 +1,10 @@
 package modelo;
+import java.time.LocalDate;
 
 public class Profissional {
     private String nome;
     private String registro;
-    private String dataAdmissao;
+    private LocalDate dataAdmissao;
     private double salarioBase;
 
     public String getNome(){
@@ -14,7 +15,7 @@ public class Profissional {
         return registro;
     }
 
-    public String getDataAdimissao(){
+    public LocalDate getDataAdmissao(){
         return dataAdmissao;
     }
 
@@ -40,13 +41,8 @@ public class Profissional {
         }
     }
 
-    public void setDataAdmissao(String dataAdmissao){
-        if(dataAdmissao.trim().isEmpty()){
-            System.out.println("Data admissão não foi preenchido");
-            return;
-        } else {
+    public void setDataAdmissao(LocalDate dataAdmissao){
             this.dataAdmissao = dataAdmissao;
-        }
     }
 
     public void setSalarioBase(double salarioBase){
@@ -58,7 +54,7 @@ public class Profissional {
         }
     }
 
-    public Profissional(String nome, String registro, String dataAdmissao, double salarioBase){
+    public Profissional(String nome, String registro, LocalDate dataAdmissao, double salarioBase){
         this.nome = nome;
         this.registro = registro;
         this.dataAdmissao = dataAdmissao;

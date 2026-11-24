@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>teste</title>
+  </head>
+  <body>
+    <p>Parágrafo com Javascript</p>
+    <button>Botão com Javascript</button>
+    <script>
+      var paragrafo = document.getElementsByTagName("p")[0];
+      var botao = document.getElementsByTagName("button")[0];
+      paragrafo.addEventListener("mouseover", msg_paragrafo);
+      botao.addEventListener("click", msg_botao);
+      function msg_paragrafo() {
+        alert("Usuário passou o mouse em cima do pagrágrafo");
+      }
+      function msg_botao() {
+        alert("Usuário clicou no botão");
+      }
+    </script>
+  </body>
+</html>
